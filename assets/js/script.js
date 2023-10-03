@@ -26,10 +26,28 @@ for (let i = 0; i < navbarLinks.length; i++) {
     navToggleBtn.classList.toggle("active");
   });
 }
+const portfolioCard = document.querySelector('.portfolio-card')
+const linkSee = document.querySelector('.see-project')
+function showLink() {
+  linkSee.style.display = 'flex'
+}
+function hideLink() {
+  linkSee.style.display = 'none'
+}
+portfolioCard.addEventListener('mouseover', showLink)
+portfolioCard.addEventListener('mouseout', hideLink)
 
 
 
+/**
+ * FOOTER
+ */
 
+const dateText = document.querySelector('.footer-date');
+const date = new Date()
+const currentYear = date.getFullYear();
+console.log(currentYear)
+dateText.textContent = currentYear;
 
 /**
  * back to top & header
