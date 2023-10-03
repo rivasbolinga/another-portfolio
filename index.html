@@ -469,56 +469,43 @@
 
 
 
-      <section class="contact" id="contact">
+      <section class="section contact" id="contact">
           <div class="container">
 
           <h2 class="h2 section-title">CONTACT ME</h2>
           <div class="contact-container">
-             <form
-   
-      >
-        <input
-          id="name"
-          type="text"
-          name="name"
+          <form action="https://formspree.io/f/mvoyvvge" method="POST" >
   
-          placeholder='Your name'
-          required
-        />
-        <input
-          id="email"
-          type="email"
-          name="email"
+          <!-- <label for="name" class="label">Your name</label> -->
+            <input
+            id="name"
+            name="name"
+            type="text" 
+            placeholder="Your name" 
+            maxlength="30" required>
+
+          <!-- <label for="email" class="label">Your email</label> -->
+          <input id="email" name="email" type="email" placeholder="Your email" required>
+   
+     
+          <!-- <label for="textarea" class="label">Message</label> -->
+          <textarea id="textarea" name="message" type="text" placeholder="Enter your message here..." maxlength="500" required></textarea>
     
-          placeholder='Your email'
-          required
-        />
-      
-        <textarea
-          id="message"
-          name="message"
-          placeholder='Your message'
-       
-          required
-        ></textarea>
-        <button
-          type="submit"
-       
-       
-        >
-         'Send'
-        </button>
+     
+        <button class="btn-collaboration btn-submit">Send</button>
       </form>
             <div class="vertical-line">
             </div>
             <div class="phone-container">
-              <a>
+              <a class="link">
+                <i class="fa-solid fa-phone"></i>
                 <p>+34602564547</p>
               </a>
-              <a>
+             <a class="link">
+                <i class="fa-solid fa-envelope"></i>
                 <p>andrearivas4cinfor@gmail.com</p>
               </a>
-               <ul class="socials">
+               <ul class="socials contact">
               <li><a target="_blank" href="https://www.linkedin.com/in/andrearivaspalacios/"><i class="fa-brands fa-linkedin-in"></i></a></li>
               <li><a target="_blank" href="https://wellfound.com/u/andrea-rivas-palacios">W:</a></li>
               <li><a target="_blank" href="https://github.com/rivasbolinga"><i class="fa-brands fa-github"></i></a></li>
