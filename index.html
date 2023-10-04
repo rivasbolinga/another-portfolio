@@ -476,26 +476,12 @@
 
           <h2 class="h2 section-title">CONTACT ME</h2>
           <div class="contact-container">
-          <form action="https://formspree.io/f/mvoyvvge" method="POST" >
-  
-          <!-- <label for="name" class="label">Your name</label> -->
-            <input
-            id="name"
-            name="name"
-            type="text" 
-            placeholder="Your name" 
-            maxlength="30" required>
-
-          <!-- <label for="email" class="label">Your email</label> -->
-          <input id="email" name="email" type="email" placeholder="Your email" required>
-   
-     
-          <!-- <label for="textarea" class="label">Message</label> -->
-          <textarea id="textarea" name="message" type="text" placeholder="Enter your message here..." maxlength="500" required></textarea>
-    
-     
-        <button class="btn-collaboration btn-submit">Send</button>
-      </form>
+        <form class="form" action="https://formspree.io/f/mvoyvvge" method="POST" onsubmit="resetForm(event)">
+  <input id="name" name="name" type="text" placeholder="Your name" maxlength="30" required>
+  <input id="email" name="email" type="email" placeholder="Your email" required>
+  <textarea id="textarea" name="message" type="text" placeholder="Enter your message here..." maxlength="500" required></textarea>
+  <button class="btn-collaboration btn-submit" type="submit">Send</button>
+</form>
             <div class="vertical-line">
             </div>
             <div class="phone-container">
@@ -559,20 +545,8 @@
 
   <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
 
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
 
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

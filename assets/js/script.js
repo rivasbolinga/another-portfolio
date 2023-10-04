@@ -1,6 +1,3 @@
-'use strict';
-
-
 
 /**
  * navbar toggle
@@ -26,28 +23,8 @@ for (let i = 0; i < navbarLinks.length; i++) {
     navToggleBtn.classList.toggle("active");
   });
 }
-const portfolioCard = document.querySelector('.portfolio-card')
-const linkSee = document.querySelector('.see-project')
-function showLink() {
-  linkSee.style.display = 'flex'
-}
-function hideLink() {
-  linkSee.style.display = 'none'
-}
-portfolioCard.addEventListener('mouseover', showLink)
-portfolioCard.addEventListener('mouseout', hideLink)
 
 
-
-/**
- * FOOTER
- */
-
-const dateText = document.querySelector('.footer-date');
-const date = new Date()
-const currentYear = date.getFullYear();
-console.log(currentYear)
-dateText.textContent = currentYear;
 
 /**
  * back to top & header
@@ -64,3 +41,29 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+/**
+ * FORM
+ */
+
+  function resetForm(event) {
+  // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Get form elements
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('textarea');
+
+    // Check if any input is empty
+    if (nameInput.value === '' || emailInput.value === '' || messageInput.value === '') {
+      return;
+    }
+
+    event.target.submit();
+
+    nameInput.value = '';
+    emailInput.value = '';
+    messageInput.value = '';
+  
+  }
