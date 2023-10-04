@@ -1,3 +1,4 @@
+"use strict";
 
 /**
  * navbar toggle
@@ -7,8 +8,8 @@ const header = document.querySelector("[data-header]");
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 
 navToggleBtn.addEventListener("click", function () {
-  header.classList.toggle("nav-active");
-  this.classList.toggle("active");
+    header.classList.toggle("nav-active");
+    this.classList.toggle("active");
 });
 
 /**
@@ -18,13 +19,11 @@ navToggleBtn.addEventListener("click", function () {
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
 
 for (let i = 0; i < navbarLinks.length; i++) {
-  navbarLinks[i].addEventListener("click", function () {
-    header.classList.toggle("nav-active");
-    navToggleBtn.classList.toggle("active");
-  });
+    navbarLinks[i].addEventListener("click", function () {
+        header.classList.toggle("nav-active");
+        navToggleBtn.classList.toggle("active");
+    });
 }
-
-
 
 /**
  * back to top & header
@@ -33,37 +32,37 @@ for (let i = 0; i < navbarLinks.length; i++) {
 const backTopBtn = document.querySelector("[data-back-to-top]");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY >= 100) {
-    header.classList.add("active");
-    backTopBtn.classList.add("active");
-  } else {
-    header.classList.remove("active");
-    backTopBtn.classList.remove("active");
-  }
+    if (window.scrollY >= 100) {
+        header.classList.add("active");
+        backTopBtn.classList.add("active");
+    } else {
+        header.classList.remove("active");
+        backTopBtn.classList.remove("active");
+    }
 });
 
 /**
  * FORM
  */
 
-  function resetForm(event) {
-  // Prevent the default form submission behavior
-    event.preventDefault();
+// function resetForm(event) {
+//     // Prevent the default form submission behavior
+//     event.preventDefault();
 
-    // Get form elements
-    const nameInput = document.getElementById('name');
-    const emailInput = document.getElementById('email');
-    const messageInput = document.getElementById('textarea');
+//     // Get form elements
+//     const nameInput = document.getElementById("name");
+//     const emailInput = document.getElementById("email");
+//     const messageInput = document.getElementById("textarea");
 
-    // Check if any input is empty
-    if (nameInput.value === '' || emailInput.value === '' || messageInput.value === '') {
-      return;
-    }
+//     // Check if any input is empty
+//     if (nameInput.value === "" || emailInput.value === "" || messageInput.value === "") {
+//         return;
+//     }
 
-    event.target.submit();
+//     event.target.submit();
 
-    nameInput.value = '';
-    emailInput.value = '';
-    messageInput.value = '';
-  
-  }
+//     nameInput.value = "";
+//     emailInput.value = "";
+//     messageInput.value = "";
+
+// }
