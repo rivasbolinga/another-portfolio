@@ -357,12 +357,12 @@ p {
 
 .hero-title {
   font-size: 20px;
-  max-width: 280px;
+  max-width: 300px;
   line-height: 1.3;
   margin-block-end: 14px;
   color: #404241;
-  font-weight: 600;
-  font-family: 'Cormorant Infant', serif;
+  font-weight: 400;
+  font-family: 'Old Standard TT', serif;
 }
 
 .hero-name {
@@ -404,9 +404,13 @@ p {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1000px) {
   .hero-name {
     font-size: 100px;
+  }
+
+  .hero-title {
+    max-width: 700px;
   }
 }
 
