@@ -778,7 +778,7 @@ p {
 
 .skills-progress-box {
   background-color: rgb(98, 98, 98);
-  height: 0.1px;
+  height: 1px;
 }
 
 .skills-progress {
@@ -815,7 +815,7 @@ p {
 .vertical-line {
   width: 100%;
   background-color: #968174;
-  height: 0.4px;
+  height: 1px;
 }
 
 .contact-card {
@@ -981,7 +981,7 @@ textarea {
   }
 
   .vertical-line {
-    width: 0.1px;
+    width: 1px;
     height: 400px;
   }
 }
@@ -1003,7 +1003,7 @@ textarea {
   }
 
   .vertical-line {
-    width: 0.1px;
+    width: 1px;
     height: 400px;
   }
 
@@ -1011,54 +1011,6 @@ textarea {
     padding: 0;
   }
 }
-
-/* -----------------------------------*\
-  #BLOG
-\*----------------------------------- */
-
-.blog { padding-block-end: 120px; }
-
-.blog .section-title { margin-block-end: 20px; }
-
-.blog .section-text { margin-block-end: 80px; }
-
-.blog-list {
-  display: grid;
-  gap: 40px;
-}
-
-.blog-card { font-family: var(--ff-barlow); }
-
-.blog-card .card-banner {
-  background-color: var(--independence);
-  border-radius: var(--radius-15);
-  overflow: hidden;
-  margin-block-end: 20px;
-}
-
-.blog-card .card-banner img { transition: var(--transition-2); }
-
-.blog-card .card-banner a:is(:hover, :focus) img { transform: scale(1.1); }
-
-.blog-card .card-banner:focus-within {
-  outline: 2px solid var(--white);
-  outline-offset: 4px;
-}
-
-.blog-card .card-tag {
-  color: var(--orange-soda);
-  margin-block-end: 5px;
-}
-
-.blog-card .card-title {
-  color: var(--white);
-  font-weight: var(--fw-600);
-  line-height: 1.3;
-}
-
-.blog-card .card-title a { transition: var(--transition-2); }
-
-.blog-card .card-title a:is(:hover, :focus) { color: var(--orange-soda); }
 
 /* -----------------------------------*\
   #FOOTER
