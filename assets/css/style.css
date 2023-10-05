@@ -147,8 +147,9 @@ body {
 
 p {
   font-family: 'Cormorant Infant', serif;
-  font-weight: 300;
-  color: #968880;
+  font-weight: 400;
+  color: #716660;
+  font-size: 18px;
 }
 
 /* -----------------------------------*\
@@ -470,6 +471,10 @@ p {
 .socials li {
   border-bottom: 0.2px solid black;
   font-weight: 600;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid #3f4241;
+  padding: 10px 15px;
 }
 
 @media (min-width: 768px) {
@@ -847,12 +852,13 @@ input {
   background-color: white;
   padding: 10px;
   border-bottom: 0.1px solid black;
+  color: rgb(58, 58, 58);
 }
 
 input,
 textarea::placeholder {
-  color: inherit;
   font-family: var(--ff-barlow);
+  color: rgb(29, 29, 29);
 }
 
 textarea {
