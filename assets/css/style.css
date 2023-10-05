@@ -195,10 +195,11 @@ p {
 }
 
 .section-subtitle {
-  color: var(--orange-soda);
+  color: rgb(104, 103, 103);
   font-family: var(--ff-barlow);
-  font-size: var(--fs-4);
+  font-size: 26px;
   text-align: center;
+  font-weight: 500;
 }
 
 .h1,
@@ -357,11 +358,11 @@ p {
 .hero-title {
   font-family: var(--ff-barlow);
   font-size: 20px;
-  max-width: 90%;
+  max-width: 300px;
   line-height: 1.3;
   margin-block-end: 14px;
-  color: #2a2b2a;
-  font-weight: 600;
+  color: #404241;
+  font-weight: 500;
 }
 
 .hero-name {
@@ -474,7 +475,11 @@ p {
   font-size: 18px;
   background-color: white;
   border: 1px solid #3f4241;
-  padding: 10px 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -858,13 +863,13 @@ input {
 input::placeholder {
   font-family: var(--ff-barlow);
   color: rgb(29, 29, 29);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 textarea::placeholder {
   font-family: var(--ff-barlow);
   color: rgb(29, 29, 29);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 textarea {
@@ -1070,10 +1075,11 @@ textarea {
 .footer-date,
 .copyright-link,
 .rights {
-  color: #3f4241;
+  color: #373737;
   font-family: 'Italiana', sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   padding: 0;
+  font-weight: 400;
   margin: 0;
 }
 
