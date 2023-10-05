@@ -655,8 +655,8 @@ p {
   }
 
   .portfolio-line {
-    width: 0.3px;
-    background-color: #3f4241;
+    width: 1px;
+    background-color: #3f4241d1;
     height: 500px;
   }
 
@@ -1344,3 +1344,4 @@ textarea {
   .contact-item { gap: 25px; }
 
   .contact-icon { padding: 30px; }
+}
